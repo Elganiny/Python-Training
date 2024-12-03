@@ -1,0 +1,9 @@
+#HEllo world variable 
+message = "Hello world"
+
+print(message)
+#Prints the length of the variable
+print(len(message))
+#It does not print the value of index 5
+print(message[:5]) 
+print(message[6:]) 

@@ -17,4 +17,5 @@ print(message.count('ll'))  # Find the count of a specific part
 print(message.find('World'))# Find the start index of any text (if there is more than one it will return the index of the first one)
 print(message.find("Universe")) # Not found = -1
 
-new_message = 
+new_message = message.replace('World','Universe') #Return a new message
+print(new_message)
