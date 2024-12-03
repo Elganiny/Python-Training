@@ -19,3 +19,20 @@ print(message.find("Universe")) # Not found = -1
 
 new_message = message.replace('World','Universe') #Return a new message
 print(new_message)
+
+greeting = 'Hello'
+name = 'Michael'
+
+message = greeting + ', ' + name + ' Welcome' #combine using plus operator
+print(message)
+
+message = '{}, {}. Welcome!'.format(greeting, name) # String Formatting (replace the place holders with variables)
+print(message)
+
+message = f'{greeting}, {name}. Welcome!' # f strings
+print(message)
+
+# For more information on string formating : https://www.youtube.com/watch?v=vTX3IwquFkc&t=0s
+
+#print(dir(name)) Shows all methods that i can use
+#print(help(str(object='').lower))
