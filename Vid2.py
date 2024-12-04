@@ -1,38 +1,60 @@
-#HEllo world variable 
+# Define a string variable
 message = "Hello World"
 
+# Print the variable
 print(message)
-#Prints the length of the variable
+
+# Print the length of the variable (number of characters in the string)
 print(len(message))
-#This is called "slicing"
-#It does not print the value of index 5
+
+# String slicing
+# Print characters from the start up to, but not including, index 5
 print(message[:5]) 
+
+# Print characters from index 6 to the end
 print(message[6:]) 
+
 #For more information on slicing : https://www.youtube.com/watch?v=ajrtAuDg3yw&t=0s
 
-#Methodes : functions but belongs to an objects
-print(message.lower())      # All letters are small 
-print(message.upper())      # All letters are Capital
-print(message.count('ll'))  # Find the count of a specific part
-print(message.find('World'))# Find the start index of any text (if there is more than one it will return the index of the first one)
-print(message.find("Universe")) # Not found = -1
+# Methods: Functions that belong to string objects
+# Convert the string to all lowercase letters
+print(message.lower())
 
-new_message = message.replace('World','Universe') #Return a new message
+# Convert the string to all uppercase letters
+print(message.upper())
+
+# Count the occurrences of the substring 'll' in the string
+print(message.count('ll'))
+
+# Find the starting index of the substring 'World'
+print(message.find('World'))
+
+# Find the starting index of the substring 'Universe' (returns -1 if not found)
+print(message.find("Universe")) 
+
+# Replace the substring 'World' with 'Universe' and return a new string
+new_message = message.replace('World', 'Universe') 
 print(new_message)
 
+# Concatenate strings using the plus operator
 greeting = 'Hello'
 name = 'Michael'
-
-message = greeting + ', ' + name + ' Welcome' #combine using plus operator
+message = greeting + ', ' + name + ' Welcome' 
 print(message)
 
-message = '{}, {}. Welcome!'.format(greeting, name) # String Formatting (replace the place holders with variables)
+# String formatting using .format()
+message = '{}, {}. Welcome!'.format(greeting, name)
 print(message)
 
-message = f'{greeting}, {name}. Welcome!' # f strings
+# String formatting using f-strings (introduced in Python 3.6, more readable)
+message = f'{greeting}, {name}. Welcome!' 
 print(message)
 
-# For more information on string formating : https://www.youtube.com/watch?v=vTX3IwquFkc&t=0s
+# For more information on string formatting : https://www.youtube.com/watch?v=vTX3IwquFkc&t=0s
 
-#print(dir(name)) Shows all methods that i can use
-#print(help(str(object='').lower))
+# Additional resources:
+# To see all available methods for a string object, uncomment the line below:
+# print(dir(name))
+
+# To get detailed help on a specific method, e.g., str.lower(), uncomment the line below:
+# print(help(str.lower))
